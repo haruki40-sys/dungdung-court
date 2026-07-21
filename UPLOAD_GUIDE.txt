@@ -1,9 +1,28 @@
-둥둥이 AI 판례집 v7
+둥둥이 AI 재판 v8 · 공통 최상단 메뉴 적용 패키지
 
-이번 추가 판례
-6. AI의 반란은 가능하다
+적용 내용
+- 주인님의 에세이와 동일한 베이지색 반투명 최상단 메뉴 추가
+- 둥 아이콘과 '둥둥이의 이야기 보관함' 문구 추가
+- 3개 웹페이지 이동 메뉴 연결
+- 현재 페이지인 '둥둥이 AI 재판' 활성화 표시
+- PC·태블릿·모바일 반응형 적용
+- 기존 AI 재판 본문, 공개 판례, 버튼, 저장 기능 및 디자인 유지
 
-GitHub 업로드
-1. ZIP을 압축 해제합니다.
-2. index.html, assets, cases, UPLOAD_GUIDE.txt를 저장소 루트에 모두 올립니다.
-3. 기존 파일을 덮어쓴 뒤 Commit changes를 누릅니다.
+GitHub 업로드 위치
+저장소: haruki40-sys/dungdung-court
+업로드 위치: 저장소 최상위(root)
+
+변경·추가 파일
+- index.html
+- assets/shared-topbar.css
+- cases/*.html 전체
+
+업로드 방법
+1. 이 ZIP의 압축을 풉니다.
+2. GitHub 저장소 최상위에서 Add file → Upload files를 선택합니다.
+3. index.html, assets 폴더, cases 폴더, UPLOAD_GUIDE.txt를 모두 올립니다.
+4. 같은 이름의 기존 파일은 덮어쓴 뒤 Commit changes를 누릅니다.
+
+주의
+- 폴더 구조를 바꾸지 마세요.
+- cases 폴더의 판례 페이지들도 상단 공통 메뉴가 표시되도록 함께 수정되어 있습니다.
