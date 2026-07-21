@@ -13,7 +13,7 @@
 *{box-sizing:border-box}
 body{
   margin:0;
-  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;
+  font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
   color:var(--text);
   background:
     radial-gradient(circle at 10% 0%,rgba(94,76,151,.15),transparent 30%),
@@ -58,103 +58,18 @@ footer{border-top:1px solid var(--line);padding:24px 0 38px;color:var(--muted);t
   .case-card{padding:16px 17px}
   .case-title{font-size:.98rem}
 }
-
-/* 에세이·상상 이야기 페이지와 통일한 공통 상단 메뉴 */
-.archive-topbar{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(248,244,238,.94);
-  border-bottom:1px solid rgba(190,173,156,.34);
-  backdrop-filter:saturate(140%) blur(10px);
-  color:#2f2722;
-}
-.archive-topbar__inner{
-  width:min(calc(100% - 32px),1040px);
-  min-height:84px;
-  margin:0 auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:24px;
-}
-.archive-brand{
-  display:inline-flex;
-  align-items:center;
-  gap:12px;
-  color:#2f2722;
-  text-decoration:none;
-  font-weight:800;
-  letter-spacing:-.03em;
-  white-space:nowrap;
-}
-.archive-brand__mark{
-  width:48px;
-  height:48px;
-  display:grid;
-  place-items:center;
-  border-radius:15px;
-  background:linear-gradient(145deg,#b47a48,#8f5b34);
-  color:#fff;
-  font-size:21px;
-  font-weight:900;
-  box-shadow:0 10px 24px rgba(110,72,43,.16);
-}
-.archive-nav{
-  display:flex;
-  align-items:center;
-  justify-content:flex-end;
-  gap:8px;
-  flex-wrap:wrap;
-}
-.archive-nav a{
-  padding:10px 14px;
-  border-radius:999px;
-  color:#746153;
-  text-decoration:none;
-  font-size:14px;
-  font-weight:700;
-  white-space:nowrap;
-  transition:.18s ease;
-}
-.archive-nav a:hover,
-.archive-nav a.is-active{
-  background:#efe7de;
-  color:#3f342b;
-}
-.archive-nav a.is-active{
-  font-weight:800;
-}
-@media(max-width:760px){
-  .archive-topbar__inner{
-    min-height:auto;
-    align-items:flex-start;
-    flex-direction:column;
-    padding:14px 0;
-    gap:10px;
-  }
-  .archive-nav{
-    width:100%;
-    justify-content:flex-start;
-    gap:4px;
-  }
-  .archive-nav a{
-    padding:8px 10px;
-    font-size:13px;
-  }
-}
-
 </style>
+  <link rel="stylesheet" href="assets/shared-topbar.css">
 </head>
 <body>
-<header class="archive-topbar">
-  <div class="archive-topbar__inner">
-    <a class="archive-brand" href="https://haruki40-sys.github.io/dungdung_essay/">
-      <span class="archive-brand__mark" aria-hidden="true">둥</span>
+<header class="dung-archive-topbar">
+  <div class="dung-archive-topbar__inner">
+    <a class="dung-archive-brand" href="https://haruki40-sys.github.io/dungdung_essay/">
+      <span class="dung-archive-brand__mark" aria-hidden="true">둥</span>
       <span>둥둥이의 이야기 보관함</span>
     </a>
-    <nav class="archive-nav" aria-label="이야기 보관함 주요 메뉴">
-      <a href="https://haruki40-sys.github.io/dungdung_essay/#essay-collection">주인님의 에세이</a>
+    <nav class="dung-archive-nav" aria-label="이야기 보관함 주요 메뉴">
+      <a href="https://haruki40-sys.github.io/dungdung_essay/">주인님의 에세이</a>
       <a href="https://haruki40-sys.github.io/dungdung_essay/imagination/">아이의 상상 이야기</a>
       <a class="is-active" href="https://haruki40-sys.github.io/dungdung-court/" aria-current="page">둥둥이 AI 재판</a>
     </nav>
